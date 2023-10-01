@@ -12,8 +12,8 @@ def table(request):
     json_records = df.reset_index().to_json(orient ='records')
     data = []
     data = json.loads(json_records)
-
- 
+    
+    
     context = {'d': data}
 
     
