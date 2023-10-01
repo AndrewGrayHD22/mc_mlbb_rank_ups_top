@@ -12,10 +12,13 @@ def table(request):
     json_records = df.reset_index().to_json(orient ='records')
     data = []
     data = json.loads(json_records)
+
+ 
     context = {'d': data}
 
+    
 
-    return render(request, 'overall_ranking/ranking_list.html', context)
+    return render(request, 'overall_ranking/ranking_list.html',context)
 
      
 

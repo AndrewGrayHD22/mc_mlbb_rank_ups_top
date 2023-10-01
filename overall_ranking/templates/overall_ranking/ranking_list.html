@@ -39,7 +39,9 @@
          }
     </style>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"> 
+    <!-- <link rel="stylesheet" type="text/css" href="{{ dir_static.css }}/main.css"> -->
+
 </head>
   
 <body>
@@ -60,6 +62,7 @@
             {% for i in d %}
             <tr>
                 <td><b>{{i.Overall_Rank}} <img class="rounded-circle account-img" src="{% static 'image/' %}{{i.ML_Name}}.jpg" onerror="this.onerror=null;this.src='{% static 'image/Default_pfp.svg.png' %}';"></b></td>
+                <!-- <td><b>{{i.Overall_Rank}} <img class="rounded-circle account-img" src="{{ dir_static.images }}/{{i.ML_Name}}.jpg" onerror="this.onerror=null;this.src='{{ dir_static.images }}/Default_pfp.svg.png';"></b></td> -->
                 <td>{{i.Player_Name}}</td>
                 <td>{{i.ML_Name}}</td>
                 <td style="color: blue"><b>{{i.Power}}</b></td>
