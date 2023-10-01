@@ -134,8 +134,8 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR, 'staticfilessss'),
-# )
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'staticfiles'),
+)
 
 STATICFILES_DIRS_EXCEL = os.path.join(BASE_DIR,"staticfiles","excel","Overall Rank.xlsx")
